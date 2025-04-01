@@ -1,0 +1,125 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 9% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 9% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 9% 12%;
+
+    --primary: 210 100% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 100% 40%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+  }
+  
+  .neo-glass {
+    @apply bg-white/90 backdrop-blur-lg border border-white/40 shadow-md;
+  }
+  
+  .button-primary {
+    @apply bg-apple-blue text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-md;
+  }
+
+  .button-secondary {
+    @apply bg-transparent border-2 border-apple-blue text-apple-blue px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-apple-blue/5;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-apple-text tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-apple-darkGray mt-2 mb-8 max-w-2xl;
+  }
+
+  .transition-apple {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    @apply opacity-0 animate-fade-in;
+  }
+  
+  .fade-up {
+    @apply opacity-0 animate-fade-up;
+  }
+  
+  .slide-in-right {
+    @apply translate-x-full animate-slide-in-right;
+  }
+  
+  .slide-in-left {
+    @apply -translate-x-full animate-slide-in-left;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+}
