@@ -1,3 +1,7 @@
+"engines": {
+  "node": "18.x"
+}
+
 {
   "name": "vite_react_shadcn_ts",
   "private": true,
