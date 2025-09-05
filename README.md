@@ -4,7 +4,6 @@
 It leverages immutable blockchain storage for reviews, peer-to-peer payments via MetaMask, and real-time carbon footprint tracking to empower eco-conscious purchases.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ##  Features
 
 - **Immutable Reviews** – All comments, ratings, and feedback are hashed and stored on the blockchain, eliminating fake or manipulated reviews.  
